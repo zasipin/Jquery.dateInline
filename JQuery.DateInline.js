@@ -53,7 +53,7 @@
         $('.date-inline-wrapper .prev').bind('click', DateInline.prototype.GoPrevious);
         DateInline.prototype.UpdateControl();
     };
-    
+
     DateInline.prototype.options = {};
 
     DateInline.prototype.SetDateText = function () {
@@ -105,7 +105,7 @@
     };
 
     DateInline.prototype.MakeOnlyDate = function (dateIn) {
-        return new Date(dateIn.getFullYear(), dateIn.getMonth() + 1, dateIn.getDate());
+        return new Date(dateIn.getFullYear(), dateIn.getMonth(), dateIn.getDate());
     };
 
     $.fn.dateInline = DateInline;
